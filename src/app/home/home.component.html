@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="background-color: #f5f5fa; border-radius: 1.5rem">
+      <div class="card-body">
+        <app-navbar></app-navbar>
+        <div
+          class="works-icon-container mb-3"
+          style="width: 200px; height: 100px"
+        ></div>
+        <div class="container my-1"></div>
+        <h5 class="card-title" style="color: #7878ab">Hi, This is oussema</h5>
+        <p class="card-text">
+          A visual designer from Boston, with a focus on interaction design. I'm
+          interested in coding, product design, as well as music.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3" *ngFor="let item of homeSection">
+    <div
+      class="card"
+      style="background-color: #f5f5fa; border-radius: 1.5rem; margin: 7px"
+    >
+      <div
+        class="works-icon-container mb-3"
+        style="width: 200px; height: 150px"
+      >
+        <img [src]="item.image" class="works-icon" />
+      </div>
+      <div class="container my-1">
+        <div
+          class="card border-0 shadow-sm"
+          style="
+            max-width: 300px;
+            border-radius: 1.5rem;
+            background-color: #f0f0f379;
+          "
+        >
+          <div class="card-body p-4 btnn" *ngIf="item.icons">
+            <div class="d-flex align-items-center justify-content-between">
+              <div>
+                <!-- Text content -->
+                <h5 class="mb-1" style="color: #4f46e5">{{ item.title }}</h5>
+                <p class="text-muted mb-0" style="font-size: 0.9rem">
+                  {{ item.subtitle }}
+                </p>
+              </div>
+
+              <!-- Arrow button -->
+              <div
+                class="d-flex align-items-center justify-content-center rounded-circle shadow-sm"
+                style="width: 40px; height: 40px"
+              >
+                <a routerLink="#" target="_blank" rel="noopener noreferrer"
+                  ><i class="fas fa-chevron-right text-muted"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

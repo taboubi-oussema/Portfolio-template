@@ -1,0 +1,27 @@
+.card {
+  transition: transform 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+}
+.btnn:hover {
+  cursor: pointer;
+}
+@media (max-width: 933px) {
+  .works-icon-container {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .works-icon-container {
+    max-width: 150px;
+  }
+}

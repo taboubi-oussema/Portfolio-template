@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  skills: string[] = [
+    'Dora', 'HTML & CSS', 'Figma', 'Prototyping',
+    'Wireframing', 'UX', 'Adobe XD', 'UI Design'
+  ];
 }
